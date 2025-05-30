@@ -1,0 +1,65 @@
+/* Добавить в index.css */
+body {
+    background: #f0f2f5;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.MuiBox-root {
+    animation: fadeIn 0.3s ease-out;
+}
+
+
+.chat-container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 2rem;
+    position: relative;
+}
+
+.logout-btn {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.chat-selector {
+    margin-bottom: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.chat-selector input {
+    padding: 0.5rem;
+    width: 200px;
+}
+
+.messages-container {
+    height: 60vh;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.message {
+    margin-bottom: 1rem;
+    padding: 1rem;
+    background: #f8f9fa;
+    border-radius: 8px;
+}
+
+.message small {
+    color: #6c757d;
+    display: block;
+    margin-top: 0.5rem;
+}
